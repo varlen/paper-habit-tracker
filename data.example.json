@@ -1,0 +1,14 @@
+{
+    "weight": 80,
+    "start_date": "2025-01-20",
+    "habits": [
+        {
+            "habit": "Cardio",
+            "emoji": "🏃"
+        },
+        {
+            "habit": "Treino de Força",
+            "emoji": "🏋️‍♂️"
+        }
+    ]
+}
