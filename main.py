@@ -26,7 +26,7 @@ for i in range(1, 13):
     weight_id = f"peso{i}"
     weight_tspan = root.find(f".//*[@id='{weight_id}']")
     if not type(weight_tspan) == type(None):
-        weight_tspan.text = str(current_weight - 6 + i)
+        weight_tspan.text = str(current_weight + 6 - i)
     else:
         print(f"No weight element found for weight {i}")
 
@@ -58,6 +58,7 @@ for i in range(len(habits)):
         habit_tspan.text = habits[i]["emoji"]
     else:
         print(f"No habit element found for {habit_id}")
+
 
 # Save updated SVG file
 svg_file.write(f"habit-tracker-{str(start_date)}.svg")
